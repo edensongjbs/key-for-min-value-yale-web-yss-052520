@@ -4,6 +4,7 @@
 def key_for_min_value(name_hash)
   min_key="nothing"
   name_hash.reduce(0) do |memo, (key, value)|
+    puts "Memo: #{memo} Key: #{key} Value: #{value}"
     if value<memo
       memo=value
       min_key=key
