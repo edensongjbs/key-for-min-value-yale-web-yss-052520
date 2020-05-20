@@ -5,9 +5,11 @@ def key_for_min_value(name_hash)
   min_key=nil
   name_hash.reduce(0) do |memo, (key, value)|
     if value<memo
-      memo=key
+      memo=value
+      min_key=key
     end
   end
+  min_key
 end
 
 HASH={name1:12, name2:24, name3:20}
