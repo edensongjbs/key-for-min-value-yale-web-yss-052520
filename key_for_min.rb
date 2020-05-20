@@ -2,7 +2,7 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
-  min_key="nothing"
+  #min_key=nil
   name_hash.reduce(nil) do |memo, (key, value)|
     puts "Memo: #{memo} Key: #{key} Value: #{value}"
     if !memo || value<memo
